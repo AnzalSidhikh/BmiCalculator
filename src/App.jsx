@@ -110,7 +110,7 @@ export default function App() {
 
   return (
     <div className="bmi-calculator">
-      <h1>Responsive BMI Calculator</h1>
+      <h1>BMI Calculator</h1>
       <form onSubmit={calculateBMI}>
         <div className="input-group">
           <label htmlFor="unit">Unit:</label>
