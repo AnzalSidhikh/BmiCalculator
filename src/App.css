@@ -13,6 +13,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-image: url('./furnituremainimage.jpg');
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
@@ -24,12 +30,7 @@ body {
   margin: 0;
 /*   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); */
   padding: 1rem;
-  background-image: url('./furnituremainimage.jpg');
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  
 }
 
 .bmi-calculator {
