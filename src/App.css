@@ -33,10 +33,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
-  height: 600px; /* Fixed height */
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* Prevent content from overflowing */
+  transition: all 0.3s ease;
 }
 
 h1 {
@@ -49,8 +46,6 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 .input-group {
@@ -120,17 +115,14 @@ button[type="button"]:hover {
 }
 
 .result {
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
   animation: fadeIn 0.5s ease;
-  overflow-y: auto; /* Allow scrolling if content overflows */
-  flex-grow: 1;
-  padding-right: 0.5rem; /* Add some padding for the scrollbar */
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .result h2 {
@@ -212,8 +204,6 @@ button[type="button"]:hover {
 @media only screen and (max-width: 600px) {
   .bmi-calculator {
     padding: 1rem;
-    height: 100vh; /* Full height on mobile */
-    max-height: 100vh;
   }
 
   h1 {
@@ -238,7 +228,6 @@ button[type="button"]:hover {
   .bmi-calculator {
     max-width: 500px;
     padding: 2rem;
-    height: 700px; /* Increased height for tablets */
   }
 
   h1 {
@@ -259,7 +248,6 @@ button[type="button"]:hover {
   .bmi-calculator {
     max-width: 600px;
     padding: 2.5rem;
-    height: 800px; /* Increased height for desktops */
   }
 
   h1 {
